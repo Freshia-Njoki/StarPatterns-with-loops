@@ -1,0 +1,99 @@
+// example 3
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+console.log('Example 3');
+let star = " ";
+for (i = 1; i <= 6; i++) {
+    star += "*";
+    console.log(star);
+}
+// example 4
+// ******
+// *****
+// ****
+// ***
+// **
+// *
+console.log('Example 4');
+for (i = 1; i <=6; i++) {
+    let star2 = ' ';
+    for(j=6;j>=i;j--){
+        star2+='*';
+    }
+    console.log(star2);
+}
+// let star2 = '******';
+// for (i = 6; i >= 1; i--) {
+//     star2 = star2.slice(0, -1);
+//     console.log(star2);
+// }
+
+// example 5
+//     *
+//    **
+//   ***
+//  ****
+// *****
+//  ****
+//   ***
+//    **
+//     *
+console.log('Example 5');
+let space = 5;
+for(i=1;i<=5;i++){
+    console.log(' '.repeat(space - i) + '*'.repeat(i)); 
+}
+for(i=1;i<=5;i++){
+    console.log(' '.repeat(i) + '*'.repeat(space-i));
+}
+
+// example 6
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+console.log('Example 6');
+let space2 = 5;
+for(i=1;i<=5;i++){
+    console.log(' '.repeat(space2 - i) + '*'.repeat(i) + '*'.repeat(i - 1))
+}
+for(i=1;i<=4;i++){
+    console.log(' '.repeat(i) + '*'.repeat(space2 - i) + '*'.repeat(4 - i));
+}
+
+// example 7
+//*******
+//      *
+//      *
+//      *
+//      *
+//      *
+//      *
+//      *
+console.log('Example 7');
+console.log('*******');
+for(i=1;i<=7;i++){
+    console.log('      *');
+}
+// example 8
+//*******
+//*
+//*
+//*
+//*
+//*
+//*
+console.log('Example 8');
+console.log('*******');
+for(i=1;i<=6;i++){
+    console.log('*      ');
+}
